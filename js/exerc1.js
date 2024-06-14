@@ -31,3 +31,18 @@ let numero3 = parseInt(prompt('Digite um numero: '));
     }else if((numero1 < numero2) && (numero2 > numero3)){
         console.log("Número 2 é maior")
     };
+/*Laço de Repetição com Saída Antecipada:
+Crie um programa que receba números inteiros do usuário até que o usuário digite zero. Ao final, exiba a soma de todos os números digitados.*/
+let soma = 0;
+let digitar_numero;
+
+do {
+    digitar_numero = parseInt(prompt("Digite um número: "));
+    if (digitar_numero !== 0) {
+        soma += digitar_numero;
+    }
+} while (digitar_numero !== 0);
+
+console.log("A soma dos números digitados é: " + soma);
+
+    
